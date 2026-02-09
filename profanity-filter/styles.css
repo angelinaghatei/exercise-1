@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.container {
+    background-color: white;
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+/* highlight for good words */
+.good-word {
+    background-color: yellow;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+#filterBtn {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    background-color: #667eea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#filterBtn:hover {
+    background-color: #5568d3;
+}
+
+#filterBtn:active {
+    transform: scale(0.98);
+}
+
+/* dialog */
+dialog {
+    border: none;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+dialog p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+#closeDialog {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #667eea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#closeDialog:hover {
+    background-color: #5568d3;
+}
