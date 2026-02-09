@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Hawaii */
+body[data-theme="hawaii"] {
+    --header-bg-col: #FF6B9D;
+    --header-text-col: #FFEB3B;
+    --main-bg-col: #4FC3F7;
+    --main-text-col: #FFFFFF;
+    --footer-bg-col: #9C27B0;
+    --footer-text-col: #FFEB3B;
+    --border-color: #FF9800;
+    --box-bg-col: #E91E63;
+}
+
+/* Dark */
+body[data-theme="dark"] {
+    --header-bg-col: #1a1a1a;
+    --header-text-col: #ffffff;
+    --main-bg-col: #2d2d2d;
+    --main-text-col: #e0e0e0;
+    --footer-bg-col: #1a1a1a;
+    --footer-text-col: #ffffff;
+    --border-color: #404040;
+    --box-bg-col: #3a3a3a;
+}
+
+/* Light */
+body[data-theme="light"] {
+    --header-bg-col: #f0f0f0;
+    --header-text-col: #333333;
+    --main-bg-col: #ffffff;
+    --main-text-col: #333333;
+    --footer-bg-col: #e0e0e0;
+    --footer-text-col: #333333;
+    --border-color: #cccccc;
+    --box-bg-col: #f9f9f9;
+}
+
+header {
+    background-color: var(--header-bg-col);
+    color: var(--header-text-col);
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 4px solid var(--border-color);
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+.theme-selector {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.theme-selector label {
+    font-weight: bold;
+}
+
+#themeSelect {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: 2px solid var(--border-color);
+    border-radius: 5px;
+    background-color: var(--box-bg-col);
+    color: var(--main-text-col);
+    cursor: pointer;
+}
+
+main {
+    background-color: var(--main-bg-col);
+    color: var(--main-text-col);
+    flex: 1;
+    padding: 3rem 2rem;
+}
+
+main h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+main p {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.content-box {
+    background-color: var(--box-bg-col);
+    border: 3px solid var(--border-color);
+    border-radius: 10px;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.content-box h3 {
+    margin-bottom: 1rem;
+    color: var(--header-text-col);
+}
+
+footer {
+    background-color: var(--footer-bg-col);
+    padding: 1.5rem;
+    border-top: 4px solid var(--border-color);
+}
