@@ -1,4 +1,3 @@
-// dårlige ord & replacements
 const curseWords = [
   { bad: "var", good: "const" },
   { bad: "float", good: "grid" },
